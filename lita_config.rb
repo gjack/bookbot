@@ -20,7 +20,8 @@ Lita.configure do |config|
   # appropriate gem to the Gemfile.
   if ENV['RACK_ENV'] == 'production'
     config.robot.adapter = :slack
-    config.redis[:url] = ENV.fetch('REDIS_URL')
+    config.redis[:url] = ENV.fetch('REDISTOGO_URL')
+    config.http.port = ENV["PORT"]
   else
     config.robot.adapter = :shell
   end
