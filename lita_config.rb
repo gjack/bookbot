@@ -22,11 +22,10 @@ Lita.configure do |config|
     config.robot.adapter = :slack
     config.redis[:url] = ENV.fetch('REDISTOGO_URL')
     config.http.port = ENV["PORT"]
+    config.adapters.slack.token = ENV.fetch('SLACK_TOKEN', '')
   else
     config.robot.adapter = :shell
   end
-
-  config.adapters.slack.token = ENV.fetch('SLACK_TOKEN', '')
 
   ## Example: Set options for the chosen adapter.
   # config.adapter.username = "myname"
