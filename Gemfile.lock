@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/gjack/lita-whats-brad-eating.git
+  revision: 1bf95c0370c7a459c7788093afb82e2997b84806
+  specs:
+    lita-whats-brad-eating (0.1.0)
+      lita (>= 4.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -56,6 +63,7 @@ DEPENDENCIES
   lita
   lita-doubler
   lita-slack
+  lita-whats-brad-eating!
 
 BUNDLED WITH
    1.12.5
